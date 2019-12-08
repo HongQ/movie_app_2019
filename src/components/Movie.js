@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import "../styles/Movie.css";
 
 class Movie extends Component {
   render() {
@@ -20,7 +21,7 @@ class Movie extends Component {
               );
             })}
           </ul>
-          <p className="movie__summary">{summary}</p>
+          <p className="movie__summary">{summary.slice(0, 180)}...</p>
         </div>
       </div>
     );
